@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<drawable name="seleted">#fce0ac</drawable>
+	<drawable name="cate_bg2">#fafafa</drawable>
+	<drawable name="transparent">#00000000</drawable>
+	
+	<drawable name="main_actionbar_bg">#00a8f2</drawable>
+	<drawable name="main_tabbar_bg">#f5b297</drawable>
+	
+</resources>

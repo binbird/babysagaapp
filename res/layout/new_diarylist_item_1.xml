@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/diaryitem_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:background="@drawable/diarylist_bg" >
+
+        <RelativeLayout
+            android:id="@+id/diaryitem_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/diaryitem_mainpic"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@android:drawable/alert_light_frame" />
+
+            <TextView
+                android:id="@+id/diaryitem_time"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diaryitem_mainpic"
+                android:text="时间"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/diaryitem_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/diaryitem_l1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/diaryitem_l1" >
+
+            <TextView
+                android:id="@+id/diaryitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/dairyitem_star"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/diaryitem_detail"
+                android:src="@android:drawable/alert_light_frame" />
+
+            <TextView
+                android:id="@+id/diaryitem_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dairyitem_star"
+                android:layout_toLeftOf="@+id/diaryitem_detail"
+                android:text="内容" />
+
+            <ImageView
+                android:id="@+id/diaryitem_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/diarylist_detail" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

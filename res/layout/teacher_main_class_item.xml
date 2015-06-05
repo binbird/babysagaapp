@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/baby_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:src="@android:drawable/divider_horizontal_bright" 
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/baby_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:layout_below="@+id/baby_img"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:id="@+id/time_school_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/baby_name"
+            >
+
+            <Button
+                android:id="@+id/btn_daoxiao"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                
+                android:text="" 
+                
+                />
+
+            <Button
+                android:id="@+id/btn_lixiao"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="" 
+                android:layout_below="@+id/btn_daoxiao"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

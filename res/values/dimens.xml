@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+	<dimen name="bottom_tab_padding_up">5.0dip</dimen>
+	<dimen name="bottom_tab_font_size">10.0dip</dimen>
+	
+	<dimen name="title_bar_height">48.0dip</dimen>
+  	<dimen name="title_bar_shadow_height">0.0dip</dimen>
+  	<dimen name="title_bar_text_size">22.0sp</dimen>
+  	<dimen name="default_padding">4.0dip</dimen>
+  	 <dimen name="title_bar_icon_height">48.0dip</dimen>
+  	 <dimen name="title_bar_icon_width">48.0dip</dimen>
+  	 
+  	 <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+  	 
+  	 <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+	<dimen name="ui_10_dip">10dip</dimen> 
+	
+	
+
+    <dimen name="historyscore_tb">10dp</dimen>
+  	 
+</resources>

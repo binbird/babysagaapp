@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/graywhite" >
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content" >
+
+			<Button
+			    android:id="@+id/add_life_btn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:text="新增生活片段" />
+		    
+		</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/add_wandr_rela"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip" 
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/add_life_btn_1"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bar_register_btn_shape"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+
+        <Button
+            android:id="@+id/date_show_btn"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignBaseline="@+id/add_life_btn_1"
+            android:layout_alignBottom="@+id/add_life_btn_1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bar_register_btn_shape"
+            android:text="日历"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/add_life_btn_1"
+            android:layout_alignBottom="@+id/add_life_btn_1"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+    	android:id="@+id/product_Rlayout"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent" 
+    	android:background="@color/graywhite"
+    	>
+	<com.handmark.pulltorefresh.library.PullToRefreshListView  
+        android:id="@+id/pull_refresh_list"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:cacheColorHint="#00000000"  
+        android:divider="#19000000"  
+        android:dividerHeight="4dp"  
+        android:fadingEdge="none"  
+        android:fastScrollEnabled="false"  
+        android:footerDividersEnabled="false"  
+        android:headerDividersEnabled="false"  
+        android:smoothScrollbar="true" >
+
+
+
+	</com.handmark.pulltorefresh.library.PullToRefreshListView>  
+
+    </RelativeLayout>
+    
+</LinearLayout>

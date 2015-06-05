@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="baby_Setting">
+        <item>Home</item>
+    </string-array>
+    
+    <string-array name="baby_blood_types">
+        <item>O</item>
+        <item>A</item>
+        <item>B</item>
+        <item>AB</item>
+    </string-array>
+    
+    <string-array name="baby_show_types">
+        <item>低落</item>
+        <item>正常</item>
+        <item>高兴</item>
+        <item>超high</item>
+    </string-array>
+    
+    <string-array name="baby_statu_types">
+        <item>起床</item>
+        <item>早餐</item>
+        <item>读书</item>
+        <item>学习</item>
+        <item>午餐</item>
+        <item>午睡</item>
+        <item>玩耍</item>
+        <item>洗澡</item>
+    </string-array>
+    
+</resources>

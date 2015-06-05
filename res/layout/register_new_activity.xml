@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/regist_backgroud"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip" 
+        >
+		<ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/regist_top"
+            />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="用户注册"
+            android:textSize="18dip"
+            android:textColor="#FFFFFF"
+             />
+
+        <ImageView
+            android:id="@+id/register_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/regist_topleft" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/regist_rl_username"
+            android:layout_width="match_parent"
+            android:layout_height="64dip" 
+            android:layout_marginTop="40dip"
+            
+            >
+
+            <EditText
+                android:id="@+id/register_user_name_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:background="@drawable/regist_text"
+                android:hint="用户名/邮箱"
+                >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/register_rl_password"
+            android:layout_width="match_parent"
+            android:layout_height="64dip" 
+            android:layout_marginTop="4dip"
+            android:layout_below="@+id/regist_rl_username"
+            
+            >
+
+            <EditText
+                android:id="@+id/register_pass_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/regist_text"
+                android:hint="密码"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/register_rl_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="64dip" 
+            android:layout_marginTop="4dip"
+            android:layout_below="@+id/register_rl_password"
+            
+            >
+
+            <EditText
+                android:id="@+id/register_pass1_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dip"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="2dip"
+                android:background="@drawable/regist_text"
+                android:hint="确认密码"
+                android:inputType="textPassword" >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/register_rl_email"
+            android:layout_width="match_parent"
+            android:layout_height="64dip" 
+            android:layout_marginTop="4dip"
+            android:layout_below="@+id/register_rl_confirmpassword"
+            
+            >
+
+            <EditText
+                android:id="@+id/register_mail_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:background="@drawable/regist_text"
+                android:hint="邮箱"
+                >
+
+                <requestFocus />
+            </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_rl_shenfen"
+            android:layout_width="match_parent"
+            android:layout_height="64dip" 
+            android:layout_below="@+id/register_rl_email">
+            
+            <RadioGroup
+			    android:id="@+id/radiogroup1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:layout_toRightOf="@+id/register_identity"
+			    android:layout_marginLeft="32.0dip"
+			    android:orientation="horizontal" >
+			    <RadioButton
+			        android:id="@+id/Parents"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:checked="true"
+			        android:text="家长" />
+			    <RadioButton
+			        android:id="@+id/teacher"
+			        android:layout_marginLeft="20dip"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="教师" />
+			</RadioGroup>
+            
+            
+        </RelativeLayout>
+        
+        
+        <RelativeLayout
+            android:id="@+id/register_rl_button"
+            android:layout_width="match_parent"
+            android:layout_height="64dip" 
+            android:layout_below="@+id/register_rl_shenfen">
+
+            <Button
+                android:id="@+id/register_save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dip"
+                android:layout_marginRight="32dip"
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="2dip"
+                android:background="@drawable/regist_save"
+                android:text="" />
+            
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

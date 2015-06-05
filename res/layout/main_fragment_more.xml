@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/graywhite" >
+    
+    <RelativeLayout
+        android:id="@+id/setting_rlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/babymanage_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/more_itemtop_press" >
+
+			<TextView
+			    android:id="@+id/babymanage_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="宝贝管理" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/updatesoft_item2"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/babymanage_item1"
+            android:background="@drawable/more_itemmiddle_press"
+             >
+			<TextView
+			    android:id="@+id/updatesoft_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="更新软件" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchclass_item3"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/updatesoft_item2"
+            android:background="@drawable/more_itemmiddle_press" >
+
+            <TextView
+                android:id="@+id/searchclass_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:text="查询班级" />
+        </RelativeLayout>
+		<RelativeLayout
+            android:id="@+id/listclass_item3"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/searchclass_item3"
+            android:background="@drawable/more_itemmiddle_press" >
+
+            <TextView
+                android:id="@+id/listclass_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:text="所在班级" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/about_item3"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/listclass_item3"
+            android:background="@drawable/more_itembottom_press"
+             >
+
+			<TextView
+			    android:id="@+id/about_text"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="关于" />
+
+        </RelativeLayout>
+
+        <Button
+         android:id="@+id/login_or_out"
+                android:layout_width="fill_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="15.0dip"
+            	android:layout_marginRight="15.0dip"
+                android:layout_below="@id/about_item3"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:background="@drawable/login_btn_shape" 
+                />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

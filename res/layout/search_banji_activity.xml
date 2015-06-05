@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_page_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_actionbar_bg" />
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dip"
+            android:src="@drawable/categorytwo_back_button_x" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="班级查询"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/no_cart_item"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/top_relative" >
+		<RelativeLayout
+            android:id="@+id/no_cart_item0"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="40.0dip"
+            android:background="@drawable/more_itemtop_press" >
+
+			<TextView
+			    android:id="@+id/login_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="班级ID:" />
+			<EditText 
+			    android:id="@+id/banji_ID"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_toRightOf="@id/login_name"
+			    android:layout_marginLeft="5dip"
+			    android:layout_centerVertical="true"
+			    android:background="@null" />
+        </RelativeLayout>
+        
+        
+        
+        <RelativeLayout
+            android:id="@+id/no_cart_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/no_cart_item0"
+            android:background="@drawable/more_itemmiddle_press" >
+
+			<TextView
+			    android:id="@+id/login_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="班级名称:" />
+			<EditText 
+			    android:id="@+id/banji_name"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_toRightOf="@id/login_name"
+			    android:layout_marginLeft="5dip"
+			    android:layout_centerVertical="true"
+			    android:background="@null" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/no_cart_item2"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/no_cart_item1"
+            android:background="@drawable/more_itembottom_press"
+             >
+
+			<TextView
+			    android:id="@+id/login_pass"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="学    校 :" />
+
+			<EditText 
+			    android:id="@+id/login_password_edit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:password="true"
+			    android:layout_marginLeft="5dip"
+			    android:layout_toRightOf="@id/login_pass"
+			    android:layout_centerVertical="true"
+			    android:background="@null" />
+
+        </RelativeLayout>
+        
+        <Button
+            android:id="@+id/search_banji_btn"
+            
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@+id/no_cart_item2"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50.0dip"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/login_btn_shape"
+            android:text="@string/searchclass_btn" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/settle_accounts"
+            android:layout_below="@+id/settle_accounts"
+            android:layout_marginTop="15dip"
+            android:visibility="gone"
+            android:text="忘记密码？" />
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

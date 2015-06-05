@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zylbaby.app"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.zylbaby.app.global.AppContext"
+        android:allowBackup="true"
+    	android:largeHeap="true"
+        android:icon="@drawable/ic_launcher_new"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.zylbaby.app.AppStart"
+            android:label="@string/app_name"
+            android:theme="@style/EmptyTheme" 
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:windowSoftInputMode="adjustPan"
+            android:configChanges="orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zylbaby.app.ui.MainActivity"
+            	  android:launchMode="singleTask"
+            	  android:configChanges="keyboardHidden|orientation|screenSize"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.LoginActivity"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:launchMode="singleTask"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.RegisterActivity"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:launchMode="singleTask"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.AddbabyActivity"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.AddWandrActivity"
+            	android:launchMode="singleTask"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.AlbumActivity"
+           		  android:screenOrientation="portrait" 
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.GalleryActivity"
+            	  android:screenOrientation="portrait" 
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.ImageFile"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:screenOrientation="portrait" 
+            	  ></activity>
+        
+        <activity android:name="com.zylbaby.app.ui.ShowAllPhoto"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:screenOrientation="portrait" 
+            	  ></activity>
+        <activity android:name="com.zylbaby.app.ui.ShowCalendar"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:screenOrientation="portrait" 
+            	  ></activity>
+        <activity android:name="com.zylbaby.app.ui.SearchBanjiActivity"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:screenOrientation="portrait" 
+            	  ></activity>
+        <activity android:name="com.zylbaby.app.ui.SearchBanjiListActivity"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  android:screenOrientation="portrait" 
+            	  ></activity>
+        <activity android:name="com.zylbaby.app.view.DialogDiaryType"
+            	android:theme="@android:style/Theme.Holo.Light"
+            	  android:screenOrientation="portrait" 
+            ></activity>
+       <activity android:name="com.teacher.app.ui.TMainActivity"
+            	  android:launchMode="singleTask"
+            	  android:configChanges="keyboardHidden|orientation|screenSize"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+       <activity android:name="com.teacher.app.ui.AddScheduleActivity"
+            	  android:launchMode="singleTask"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+       
+       <activity android:name="com.teacher.app.ui.CompleteScheduleActivity"
+            	  android:launchMode="singleTask"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+       <activity android:name="com.teacher.app.ui.CreateBanjiActivity"
+            	  android:launchMode="singleTask"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+       
+       <activity android:name="com.teacher.app.ui.TeacherInfoActivity"
+            	  android:launchMode="singleTask"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+       <activity android:name="com.why.photoaibum.PhotoActivity"></activity>
+        <activity android:name="com.why.photoaibum.ShowBigPic"></activity>
+        <activity
+            android:name="com.why.photoaibum.PhotoAlbumActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity android:name="com.zylbaby.app.ui.AddLifeActivity"
+            	  android:launchMode="singleTask"
+            	  android:theme="@android:style/Theme.Holo.Light"
+            	  ></activity>
+        
+        
+        <activity
+            android:name="com.loveplusplus.demo.image.ImagePagerActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+        <activity
+            android:name="com.zylbaby.app.ui.AddLifeActivityNew"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light"
+            
+            ></activity>
+         <activity
+            android:name="com.photo.select.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.photo.select.ImageGridActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.photo.select.TestPicActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            
+        </activity>
+        <activity 
+            
+            android:name="com.zylbaby.app.ui.AddInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            ></activity>
+        <activity 
+            android:name="com.teacher.app.ui.TAddInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            ></activity>
+        
+        <activity 
+            android:name="com.teacher.app.ui.TAddInfoAllActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+            
+            
+        </activity>
+        <activity
+            android:name="com.teacher.app.ui.BabyDiaryListActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            ></activity>
+        <activity
+            android:name="com.zylbaby.app.ui.BabyClassList"
+            android:theme="@android:style/Theme.Holo.Light"
+            ></activity>
+        <activity
+            android:name="com.zylbaby.app.ui.ClassScheduleActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            >
+         </activity>
+         
+        <activity
+            android:name="com.teacher.app.ui.TAddWandrActivity"
+           android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light"
+            >
+            
+        </activity>
+        
+        <activity
+            android:name="com.zylbaby.app.ui.GuideActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            >
+            
+            
+        </activity>
+        <activity
+            android:name="com.baby.common.ui.HelpListActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            />
+            
+        <activity
+            android:name="com.baby.common.ui.HelpPicShowActivity"
+            android:theme="@android:style/Theme.Holo.Light"
+            />
+        
+    </application>
+
+</manifest>

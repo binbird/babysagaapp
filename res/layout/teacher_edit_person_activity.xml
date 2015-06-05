@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res/com.zylbaby.app"
+    android:id="@+id/add_baby_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_page_bg" >
+    
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_actionbar_bg" />
+
+        <ImageView
+            android:id="@+id/add_baby_back_btn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="15dip"
+            android:src="@drawable/categorytwo_back_button_x" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="教师资料"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:gravity="center" />
+        
+         <Button
+            android:id="@+id/titleRightButton"
+            android:layout_width="40.0dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="8.0dip"
+            android:textColor="@color/white"
+            android:background="@drawable/bar_register_btn_shape"
+            android:layout_marginBottom="8.0dip"
+            android:textSize="10sp"
+            android:text="跳过"
+             />
+        
+    </RelativeLayout>
+    
+    <ScrollView
+        android:id="@+id/add_baby_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/top_relative" >
+    
+    <RelativeLayout
+        android:id="@+id/add_baby_rlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+        
+        <RelativeLayout
+            android:id="@+id/add_baby_image_rlayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	         android:layout_marginTop="30.0dip"
+	         >
+            <com.zylbaby.app.view.BootstrapCircleThumbnail
+                android:id="@+id/add_baby_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                bootstrap:bct_image="@drawable/add_image_press"
+                bootstrap:bct_size="large"
+                />
+         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_baby_item1"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="30.0dip"
+            android:layout_below="@id/add_baby_image_rlayout"
+            android:background="@drawable/more_itemtop_press" >
+
+			<TextView
+			    android:id="@+id/add_baby_name"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="教师姓名" />
+			<EditText 
+			    android:id="@+id/add_baby_name_edit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_toRightOf="@id/add_baby_name"
+			    android:layout_marginLeft="25dip"
+			    android:textSize="14sp"
+			    android:layout_centerVertical="true"
+			    android:background="@null" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/add_baby_item2"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/add_baby_item1"
+            android:background="@drawable/more_itemmiddle_press"
+             >
+			<TextView
+			    android:id="@+id/add_baby_name1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="小        名:" />
+			<EditText 
+			    android:id="@+id/add_baby_name1_edit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginLeft="25dip"
+			    android:layout_toRightOf="@id/add_baby_name1"
+			    android:layout_centerVertical="true"
+			    android:textSize="14sp"
+			    android:background="@null" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/add_baby_item3"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/add_baby_item2"
+            android:background="@drawable/more_itemmiddle_press"
+             >
+			<TextView
+			    android:id="@+id/add_baby_birth"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="出生日期:" />
+
+			<LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="50dip"
+			    android:layout_marginRight="10dip"
+			    android:layout_marginLeft="15dip"
+			    android:layout_toRightOf="@id/add_baby_birth"
+			    android:layout_weight="1"
+			    android:orientation="horizontal" >
+
+			    <EditText
+			        android:id="@+id/task_time_edit"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_gravity="end"
+			        android:layout_weight="1"
+			        android:maxLength="20"
+			        android:textSize="14sp"
+			        android:singleLine="true" />
+
+			    <ImageButton
+			        android:id="@+id/add_task_date_btn"
+			        android:layout_width="fill_parent"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="5"
+			        android:background="@drawable/add_task_time_btn"
+			        android:src="@drawable/ic_date" />
+			</LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_baby_item4"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/add_baby_item3"
+            android:background="@drawable/more_itemmiddle_press"
+             >
+			<TextView
+			    android:id="@+id/add_baby_sex"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="性        别:" />
+			<RadioGroup
+			    android:id="@+id/radiogroup1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:layout_toRightOf="@id/add_baby_sex"
+			    android:layout_marginLeft="15.0dip"
+			    android:orientation="horizontal" >
+			    <RadioButton
+			        android:id="@+id/man"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:checked="true"
+			        android:text="男" />
+			    <RadioButton
+			        android:id="@+id/woman"
+			        android:layout_marginLeft="20dip"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="女" />
+			</RadioGroup>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/add_baby_item5"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/add_baby_item4"
+            android:background="@drawable/more_itemmiddle_press"
+             >
+			<TextView
+			    android:id="@+id/add_baby_blood"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="血        型:" />
+			<Spinner
+			    android:id="@+id/blood_types_list"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/add_baby_blood"
+			    android:layout_marginLeft="15.0dip"
+			    android:layout_marginRight="15.0dip"
+			    android:entries="@array/baby_blood_types"
+			    android:layout_centerVertical="true"
+			    android:orientation="horizontal" >
+			</Spinner>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/add_baby_item6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/add_baby_item5"
+            android:background="@drawable/more_itemmiddle_press"
+            android:orientation="vertical" >
+			<TextView
+			    android:id="@+id/add_baby_nativeplace"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"
+			    android:layout_marginLeft="15.0dip"
+			    android:layout_marginTop="15dip"
+			    android:text="籍        贯:" />
+			
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginBottom="15dip"
+                android:layout_toRightOf="@id/add_baby_nativeplace"
+                android:orientation="vertical" >
+			    
+			    <Spinner
+				    android:id="@+id/spinner1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:scrollbars="none"
+				     />
+
+				<Spinner
+				    android:id="@+id/spinner2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				     />
+	
+				<Spinner
+				    android:id="@+id/spinner3"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				     />
+			</LinearLayout>
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/add_baby_item7"
+            android:layout_width="fill_parent"
+            android:layout_height="230.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_below="@id/add_baby_item6"
+            android:background="@drawable/more_itembottom_press"
+             >
+			<TextView
+			    android:id="@+id/add_baby_beizhu"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="15.0dip"
+			    android:text="教师描述:" />
+			<EditText 
+			    android:id="@+id/add_baby_beizhu_edit"
+			    android:layout_width="fill_parent"
+			    android:layout_height="200dip"
+			    android:layout_marginLeft="15.0dip"
+			    android:layout_marginRight="15.0dip"
+			    android:layout_marginBottom="15.0dip"
+			    android:padding="5dip"
+			    android:layout_toRightOf="@id/add_baby_beizhu"
+			    android:layout_centerVertical="true"
+			    android:background="@drawable/text_edit_shape"
+			    android:gravity="start" />
+
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/register_view1"
+            android:layout_width="fill_parent"
+            android:layout_height="20dip"
+            android:layout_below="@id/add_baby_item7"
+            />
+        
+        <Button
+            android:id="@+id/add_baby_save_btn"
+            style="\@style/common_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_below="@id/register_view1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="20.0dip"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/login_btn_shape"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="保存"
+            android:textColor="@color/white" />
+        
+        <View
+            android:id="@+id/register_view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_below="@id/add_baby_save_btn"
+            />
+        
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

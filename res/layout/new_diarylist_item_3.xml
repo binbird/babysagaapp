@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#ffffff"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inforltop"
+             >
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" 
+                android:id="@+id/time_rl"
+                >
+
+                <TextView
+                    android:id="@+id/diaryitem_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:maxWidth="130dp"
+                    android:textSize="16dp"
+                    android:text="19:14-20:22" 
+                    
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/diaryitem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/time_rl"
+                android:textSize="16dp"
+                android:text="作息标题" />
+            
+            <ImageView
+                    android:id="@+id/dairyitem_star"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/stars_5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/inforltop"
+            >
+
+        <ImageView 
+            android:id="@+id/diaryitem_mainpic" 
+            android:layout_width="48dp" 
+            android:layout_height="48dp" 
+            android:layout_marginLeft="18dp" 
+            android:src="@drawable/babystate_naughty" />
+        
+          <TextView
+                    android:id="@+id/pic_count"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                   	android:layout_alignParentTop="true"
+                   	android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/pic_count"
+                    android:text="0" 
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    />
+
+          <TextView
+              android:id="@+id/diaryitem_content"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignTop="@+id/pic_count"
+              android:layout_toRightOf="@+id/diaryitem_mainpic"
+              android:layout_marginLeft="36dp"
+              android:maxWidth="200dp"
+              android:text="内容"
+              android:textColor="#000000" />
+
+          <Button
+              android:id="@+id/btn_del"
+              style="?android:attr/buttonStyleSmall"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_alignParentTop="true"
+              android:layout_toLeftOf="@+id/pic_count"
+              android:layout_marginTop="5dp"
+              android:text=""
+              android:background="@drawable/system_del" 
+              android:focusable="false"
+              android:clickable="false"
+              />
+        
+        </RelativeLayout>
+
+        
+
+    </RelativeLayout>
+
+</LinearLayout>

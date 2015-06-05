@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FlowIndicator">
+        <attr name="count" format="integer" />
+        <attr name="space" format="dimension" />
+        <attr name="point_size" format="dimension" />
+        <attr name="point_seleted_color" format="color|reference" />
+        <attr name="point_normal_color" format="color|reference" />
+        <attr name="point_radius" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="BootstrapCircleThumbnail">
+        <attr name="bct_image" format="integer"/>
+        <attr name="bct_size" format="string" />
+        <attr name="bct_minimal" format="boolean" />
+        <attr name="android:text"/>
+    </declare-styleable>
+	<declare-styleable name="ViewFlow">
+        <attr name="sidebuffer" format="integer" />
+    </declare-styleable>
+        <declare-styleable name="CircleFlowIndicator">
+        <attr name="activeColor" format="color" />
+        <attr name="inactiveColor" format="color" />
+        <attr name="spacing" format="dimension" />
+        <attr name="fadeOut" format="integer" />
+        <attr name="inactiveType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="activeType">
+            <flag name="stroke" value="0" />
+            <flag name="fill" value="1" />
+        </attr>
+        <attr name="circleSeparation" format="dimension" />
+        <attr name="activeRadius" format="dimension" />
+    </declare-styleable>
+</resources>
